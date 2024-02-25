@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+/* Header */
+header {
+    width: 100%;
+    max-width: 2064px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+}
+/* Main - Cuadro 1/Cuadro 2 - Display flex */
+main {
+    width: 100%;
+    max-width: 2064px;
+    display: flex;
+}
+/* Cuadro 1 */
+.box1 {
+   width: 50%;
+   background-color: #00a801;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 685px;
+}
+.box1 h1 {
+    color: #ffff;
+    font-size: 80px;
+    margin: 15px 0 35px 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.box1 p {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+.bottomMain {
+    width: 600px;
+    height: 80px;
+    border-radius: 45px;
+    display: flex;
+    background-color: rgb(238, 255, 4);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 51px;
+    box-shadow: 0px 0px;
+    transition: 0.2s;
+}
+.bottomMain:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 14px;
+    transition: 0.2s;
+}
+.bottomMain p {
+    color: black;
+    font-size: 20px;
+}
+.elementsBox1 {
+    padding: 160px;
+}
+/* Cuadro 2 */
+.box2 {
+    width: 50%;
+    height: 685px;
+    background-color: grey;
+    overflow: hidden;
+}
+
+/* Parte 2 de la foto de 3lbs only */
+.content1 {
+    width: 1400px;
+    height: 635px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 0 100px 0;
+    background-color: rgb(236, 236, 236);
+}
+.cubeCon1 {
+    width: auto;
+}
+.cubeCon1 img {
+    width: 655px;
+    margin: 0 15px 0 15px;
+}
+.cubeCon2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 45px;
+}
+.cubeCon2 h1 {
+    color: #00a50e;
+    font-size: 60px;
+    margin: 15px 0 35px 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Parte contenido 2 */
+
+.content2 {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(226, 226, 226);
+    padding: 100px 0 100px 0;
+}
+.contentAjust {
+    width: 1080px;
+    text-align: center;
+}
+.videos {
+    width: 1080px;
+    height: 720px;
+    display: flex;
+    background-color: grey;
+}
+.content2 h1 {
+    font-size: 70px;
+    color: #00a50e;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.content2 p {
+    font-size: 18px;
+}
+/* Parte de items  */
+.elements2 {
+    width: 1460px;
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.foto {
+    width: 430px;
+    height: 566px;
+}
+.foto img {
+    width: 100%;
+}
+.fotos {
+    text-align: center;
+}
+.subvideo {
+    margin-top: 150px;
+}
+.subsubvideo {
+    width: 430px;
+    height: 244px;
+}
+.subsubvideo video {
+    width: 100%;
+}
+.fotos h1 {
+    color: #00a801;
+    font-size: 45px;
+    margin: 15px 0 35px 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.fotos ul li {
+    text-align: start;
+}
+.fotos ul {
+  padding-left: 20px;
+}
+/* Parte de la informacion */
+.info {
+    width: 100%;
+    max-width: 2064px;
+    margin-top: 100px;
+}
+.container {
+    width: 100%;
+    height: 357px;
+    display: flex;
+}
+.textContainer {
+    width: 50%;
+    height: 357px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 136px;
+}
+.textContainer p {
+    font-size: 22px;
+}
+.imageContainer {
+    width: 50%;
+    height: 357px;
+    background-color: grey;
+    overflow: hidden;
+}
+.imageContainer img {
+    width: 100%;
+}
+
+/* Penultima parte */
+
+.digitalControl {
+    width: 100%;
+    max-width: 2064px;
+    display: flex;
+}
+.textDigital {
+    width: 50%;
+    padding: 85px 0 85px 85px;
+}
+.textDigital h1 {
+    color: #00a50e;
+    font-size: 60px;
+    margin: 15px 0 35px 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.imgDigital {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ultima parte */
+
+.contactUs {
+    width: 100%;
+    max-width: 2064px;
+    display: flex;
+}
+.questionary {
+    width: 60%;
+    background-color: rgb(105, 106, 108);
+    padding: 95px 100px 95px 210px;
+}
+.questionary h1 {
+    font-size: 70px;
+    margin: 15px 0 35px 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+.questionary p {
+    color: white;
+}
+.questionary input {
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 0 26px 0;
+}
+.questionary input::placeholder {
+    transform: translate(10px, 0px);
+}
+.questionary .boton2 {
+    width: 600px;
+    height: 40px;
+    background-color: #00a50e;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images {
+    width: 40%;
+    height: auto;
+/*     background-color: grey; */
+    background-image: url("Tools/Cuarta-Foto.png");
+    background-size: 830px 649px;
+}
+/* Footer */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0 0 0;
+}
+footer p {
+    margin: 15px 0 35px 0;
+    font-size: 17px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
