@@ -661,15 +661,16 @@ footer a {
     }
     .fotos {
         width: 100%;
-        height: 1880px;
+        height: auto;
+        margin-bottom: 150px;
     }
     .foto {
         width: 100%;
-        height: 950px;
+        height: auto;
     }
     .subsubvideo {
         width: 100%;
-        height: 429px;
+        height: auto;
     }
     .fotos ul li {
         text-align: start;
@@ -832,7 +833,7 @@ footer a {
     main {
         max-width: 340px;
     }
-    
+
 }
 /* Fin de relleno de main */
 @media (max-width: 968px) {
@@ -858,7 +859,7 @@ footer a {
     .questionary {
         width: 100%;
         height: 70%;
-        padding: 100px;
+        padding: 20px;
     }
     .questionary input {
         width: 100%;
@@ -881,4 +882,17 @@ footer a {
         background-image: url(Tools/Cuarta-Foto.png);
         background-size: 830px 649px;
     }
+/* Parte Digital Control */
+    .digitalControl {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        margin: 15px 0 85px;
+    }
+    .textDigital {
+        width: 80%;
+        padding: 40px 0px 40px 0px;
+        text-align: center;
+    }
+    
 }
