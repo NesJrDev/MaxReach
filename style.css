@@ -676,6 +676,7 @@ footer a {
         font-size: 20px;
     }
 }
+/* Inicio de relleno de main */
 @media (max-width: 913px) {
     main {
         max-width: 856px;
@@ -699,6 +700,98 @@ footer a {
         max-width: 698px;
     }
 }
+@media (max-width:748px) {
+    .contentAjust {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+}
+@media (max-width:674px) {
+    main {
+        max-width: 618px;
+    }
+}
+@media (max-width:587px) {
+    main {
+        max-width: 538px;
+    }
+    .videos {
+        width: 88%;
+        height: 282px;
+        display: flex;
+        background-color: grey;
+    }
+    .content2 h1 {
+        font-size: 36px;
+        color: #00a50e;
+        font-family: "Unbounded", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .content2 p {
+        font-size: 14px;
+    }
+}
+@media (max-width:556px) {
+    main {
+        max-width: 517px;
+    }
+    .box1 {
+        width: 100%;
+        background-color: #00a801;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0;
+        height: 457px;
+    }
+    .box2 {
+        width: 100%;
+        height: 440px;
+    }
+    .content1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 982px;
+    }
+    .content2 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: rgb(226, 226, 226);
+        padding: 100px 0 100px 0;
+    }
+    .videos {
+        width: 100%;
+        height: 273px;
+        display: flex;
+        background-color: grey;
+    }
+    .contentAjust {
+        width: 90%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+    .content2 h1 {
+        font-size: 28px;
+        color: #00a50e;
+        font-family: "Unbounded", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .content2 p {
+        font-size: 13px;
+    }
+}
+
+/* Fin de relleno de main */
 @media (max-width: 968px) {
     .container {
         display: grid;
