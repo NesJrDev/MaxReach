@@ -145,8 +145,16 @@
     </div>
 </body>
 <script>
-    alert(window.innerWidth)
-</script>
+    // Obtener el elemento de video
+    var video = document.getElementById('repeating-video');
+    
+    // Añadir un evento que se activa cuando el video termina
+    video.addEventListener('ended', function() {
+      // Reiniciar el video
+      this.currentTime = 0;
+      this.play();
+    });
+    </script>
 <footer>
     <img src="Tools/Logo-MaxReach.svg" alt="Logo">
     <p>By signing up you agree to receive email updates</p>

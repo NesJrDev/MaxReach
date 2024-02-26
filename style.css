@@ -790,7 +790,50 @@ footer a {
         font-size: 13px;
     }
 }
-
+@media (max-width:510px) {
+    main {
+        max-width: 485px;
+    }   
+}
+@media (max-width:474px) {
+    main {
+        max-width: 445px;
+    }
+}
+@media (max-width: 440px) {
+    main {
+        max-width: 410px;
+    }
+}
+@media (max-width: 384px) {
+    main {
+        max-width: 360px;
+    }
+    .elementsBox1 h1 {
+        font-size: 33px;
+    }
+    .box1 p {
+        color: white;
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+    .box1 .bottomMain {
+        width: 100%;
+        height: 55px;
+    }
+}
+@media (max-width: 357px) {
+    main {
+        max-width: 410px;
+    }
+    .elementsBox1 {
+        padding: 14px;
+    }
+    main {
+        max-width: 340px;
+    }
+    
+}
 /* Fin de relleno de main */
 @media (max-width: 968px) {
     .container {
