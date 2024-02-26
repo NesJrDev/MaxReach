@@ -1,1 +1,1 @@
-alert(windows.innerWith)
+alert(window.innerWidth)
