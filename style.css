@@ -264,49 +264,70 @@ main {
 
 .contactUs {
     width: 100%;
+    height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Tools/ARBUSTOS-BACK.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+.contactUs::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 280%;
+    z-index: 1;
+    position: absolute;
+    backdrop-filter: blur(10px);
 }
 .questionary {
-    width: 60%;
-    background-color: rgb(105, 106, 108);
-    padding: 95px 100px 95px 210px;
+    width: 80vh;
+    height: auto;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    z-index: 2;
 }
 .questionary h1 {
-    font-size: 50px;
-    margin: 15px 0 35px 0;
-    font-family: "Unbounded", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
     color: white;
 }
 .questionary p {
     color: white;
 }
-.questionary input {
-    width: 600px;
-    height: 40px;
-    border-radius: 5px;
+.questionary form {
+    display: grid;
+    place-items: center;
+}
+.questionary form input {
+    width: 80%;
+    height: 45px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    overflow: visible;
+}
+.questionary form textarea {
+    width: 80%;
+    margin-top: 10px;
+    padding: 15px;
+}
+.boton2 {
+    width: 80%;
+    height: 45px;
     margin: 15px 0 15px 0;
-}
-.questionary input::placeholder {
-    transform: translate(10px, 0px);
-}
-.questionary .boton2 {
-    width: 600px;
-    height: 40px;
     background-color: #00a50e;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: linear-gradient(#49df49, #49df49);
+    background-repeat: no-repeat;
+    background-position: -730px;
+    color: white;
+    transition: 0.5s;
 }
-.images {
-    width: 40%;
-    height: auto;
-/*     background-color: grey; */
-    background-image: url("Tools/Cuarta-Foto.png");
-    background-size: 830px 649px;
+.boton2:hover {
+    border-radius: 30px;
+    transition: 0.5s;
+    background-position: 0;
 }
 /* Footer */
 footer {
@@ -347,20 +368,7 @@ footer a {
     .imageContainer img {
         width: 104%;
     }
-    .questionary {
-        width: 60%;
-        background-color: rgb(105, 106, 108);
-        padding: 25px 100px 25px 100px;
-    }
-    .questionary h1 {
-        font-size: 50px;
-        margin: 15px 0 35px 0;
-        font-family: "Unbounded", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        color: white;
-    }
+ /* Mas quiasdkajsld */
 }
 @media (max-width: 1429px) {
     .content1 {
@@ -576,12 +584,7 @@ footer a {
         font-size: 15px;
     }
     /* questionario */
-    .questionary {
-        padding: 25px 106px 28px 28px;
-    }
-    .questionary h1 {
-        font-size: 34px;
-    }
+
 }
 @media (max-width:995px) {
     main {
@@ -849,39 +852,6 @@ footer a {
     .imageContainer {
         height: auto;
         width: 100%;
-    }
-    .contactUs {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        height: 790px;
-    }
-    .questionary {
-        width: 100%;
-        height: 70%;
-        padding: 20px;
-        text-align: center;
-    }
-    .questionary input {
-        width: 100%;
-        height: 40px;
-        border-radius: 5px;
-        margin: 20px 0 26px 0;
-    }
-    .questionary .boton2 {
-        width: 100%;
-        height: 40px;
-        background-color: #00a50e;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .images {
-        width: 100%;
-        height: 30%;
-        background-image: url(Tools/Cuarta-Foto.png);
-        background-size: 830px 649px;
     }
 /* Parte Digital Control */
     .digitalControl {
