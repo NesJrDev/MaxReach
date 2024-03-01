@@ -411,6 +411,18 @@ footer a {
     .subsubvideo {
         width: 100%;
     }
+    .contactUs {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(Tools/ARBUSTOS-BACK.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
 } 
 @media (max-width: 1200px) {
     .box1 {
