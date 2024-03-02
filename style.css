@@ -261,73 +261,78 @@ main {
     align-items: center;
 }
 /* Ultima parte */
-
 .contactUs {
     width: 100%;
     height: auto;
+    background-image: url(Tools/ARBUSTOS-BACK.jpg);
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(Tools/ARBUSTOS-BACK.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-}
-.contactUs::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 280%;
-    z-index: 1;
-    position: absolute;
-    backdrop-filter: blur(10px);
 }
 .questionary {
     width: 80vh;
     height: auto;
-    text-align: center;
-    margin: 30px 0 30px 0;
+    backdrop-filter: blur(10px);
+    border: 3px solid white;
+    background: #ffffff4f;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 69px;
 }
 .questionary h1 {
-    color: white;
-}
-.questionary p {
-    color: white;
+    color: black;
 }
 .questionary form {
-    display: grid;
-    place-items: center;
-}
-.questionary form input {
     width: 80%;
-    height: 45px;
-    border-radius: 25px;
-    padding: 15px;
-    margin: 10px 0 10px 0;
-    overflow: visible;
 }
-.questionary form textarea {
-    width: 80%;
-    margin-top: 10px;
-    padding: 15px;
-}
-.boton2 {
-    width: 80%;
-    height: 45px;
+.input-area {
+    width: 100%;
     margin: 15px 0 15px 0;
-    background-color: #00a50e;
-    background-image: linear-gradient(#49df49, #49df49);
-    background-repeat: no-repeat;
-    background-position: -730px;
-    color: white;
+}
+.input-area input {
+    width: 100%;
+    height: 39px;
+    background-color: transparent;
+    outline: none;
+    border: transparent;    
+    border-bottom: 2px solid black;
+}
+.input-area label {
+    position: relative;
+    top: -30px;
     transition: 0.5s;
 }
-.boton2:hover {
-    border-radius: 30px;
+.input-area input:focus ~ label,
+.input-area input:valid ~ label {
+    position: relative;
+    top: -54px;
     transition: 0.5s;
+}
+.questionary textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+.questionary .button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: #00a801;
+    background-image: linear-gradient(#348534, #348534);
+    background-repeat: no-repeat;
+    background-position: -750px;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+.questionary .button:hover {
     background-position: 0;
+    transition: 0.5s;
 }
 /* Footer */
 footer {
@@ -368,7 +373,6 @@ footer a {
     .imageContainer img {
         width: 104%;
     }
- /* Mas quiasdkajsld */
 }
 @media (max-width: 1429px) {
     .content1 {
@@ -715,6 +719,23 @@ footer a {
     main {
         max-width: 698px;
     }
+    .questionary {
+        width: 100%;
+        height: auto;
+        backdrop-filter: blur(10px);
+        border: 3px solid white;
+        background: #ffffff4f;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 26px;
+    }
+    .questionary h1 {
+        color: black;
+        font-size: 25px;
+    }
 }
 @media (max-width:748px) {
     .contentAjust {
@@ -804,6 +825,16 @@ footer a {
     }
     .content2 p {
         font-size: 13px;
+    }
+    .questionary h1 {
+        color: black;
+        font-size: 25px;
+        text-align: center;
+        padding: 5px;
+    }
+    .questionary p {
+        color: black;
+        text-align: center;
     }
 }
 @media (max-width:510px) {

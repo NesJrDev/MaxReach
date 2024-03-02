@@ -136,30 +136,27 @@
     <div class="questionary">
         <h1>Sing up for your pre-sale discount</h1>
         <form action="https://formsubmit.co/necastilloe@gmail.com" method="POST">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="number" name="number" id="number" placeholder="Phone number">
-            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="hidden" name="_next" value="https://nesjrdev.github.io/MaxReach/questionary.html">
             <input type="hidden" name="_captcha" value="false">
-            <button type="submit" class="boton2">Get Started Here</button>
+            <div class="input-area">
+                <input type="text" class="input-input" required>
+                <label class="label-input">Name</label>
+            </div>
+            <div class="input-area">
+                <input type="text" class="input-input" required>
+                <label class="label-input">Email</label>
+            </div>
+            <div class="input-area">
+                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Get started" class="button">
+
         </form>
-        
         <p>*Pre-sale discount count will only be valid until April 30</p>
         </div>
     </div>
 </body> 
-<script>
-    // Obtener el elemento de video
-    var video = document.getElementById('repeating-video');
-    
-    // Añadir un evento que se activa cuando el video termina
-    video.addEventListener('ended', function() {
-      // Reiniciar el video
-      this.currentTime = 0;
-      this.play();
-    });
-    </script>
+<script src="index.js"></script>
 <footer>
     <img src="Tools/Logo-MaxReach.svg" alt="Logo">
     <p>By signing up you agree to receive email updates</p>
